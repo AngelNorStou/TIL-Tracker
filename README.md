@@ -57,3 +57,19 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+# TIL Tracker
+
+A simple Angular app to track what you learn each day.
+
+## Features
+
+- Add daily TIL entries with title, description, and tags
+- Filter entries by tag or date
+- Stores data locally in `localStorage`
+
+## Tech Stack
+
+- Angular (standalone components)
+- Vanilla CSS
+- Signals
