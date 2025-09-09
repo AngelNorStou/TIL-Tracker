@@ -1,0 +1,80 @@
+/* List container */
+.til-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* Each TIL entry styled like a card */
+.til-entry {
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+  color: #fff;
+}
+
+.til-entry:hover {
+  transform: translateY(-2px);
+}
+
+/* Title */
+.til-entry h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* Tags and date */
+.tags {
+  font-size: 0.9rem;
+  color: #d1d1d1;
+  margin-top: 0.5rem;
+}
+
+.date {
+  font-size: 0.8rem;
+  color: #bbbbbb;
+  margin-top: 0.25rem;
+}
+
+.tag-filter-input {
+  width: 97%;
+  padding: 0.75rem;
+  margin: 1rem 0 2rem 0;
+  border-radius: 6px;
+  border: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: background 0.3s ease;
+}
+
+.tag-filter-input::placeholder {
+  color: #ccc;
+}
+
+.tag-filter-input:focus {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+#date-select {
+  margin: 1rem 1rem 2rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+}
+
+.no-results {
+  margin-top: 1rem;
+  font-style: italic;
+  color: #ccc;
+}
+

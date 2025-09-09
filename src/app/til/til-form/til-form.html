@@ -1,0 +1,20 @@
+<h2>Add a New TIL</h2>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="til-form">
+  <label>
+    Title:
+    <input formControlName="title" />
+  </label>
+
+  <label>
+    Description:
+    <textarea formControlName="description"></textarea>
+  </label>
+
+  <label>
+    Tags (comma-separated):
+    <input formControlName="tags" />
+  </label>
+
+  <button type="submit" [disabled]="form.invalid">Submit</button>
+</form>

@@ -1,0 +1,68 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: system-ui, sans-serif;
+  min-height: 100vh;
+  padding: 2rem;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  h1 {
+    margin: 0;
+  }
+
+  header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+  nav {
+    a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+      transition: opacity 0.2s ease, border-bottom 0.3s ease;
+      border-bottom: 2px solid transparent;
+
+      &.active {
+        text-decoration: underline;
+      }
+
+      &:hover {
+        color: #2c3e50;
+      }
+    }
+  }
+}
+
+main {
+  min-height: 60vh;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  flex-grow: 1;
+}
+
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
