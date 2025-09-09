@@ -1,6 +1,6 @@
 <h2>Today I Learned</h2>
 
-<!-- Date Selector -->
+
 <label for="date-select">View entries for:</label>
 <select
   id="date-select"
@@ -12,7 +12,7 @@
   </option>
 </select>
 
-<!-- Tag Filter -->
+
 <input
   type="text"
   placeholder="Filter by tag..."
@@ -21,12 +21,12 @@
   class="tag-filter-input"
 />
 
-<!-- No results message -->
+
 <p *ngIf="filteredTils().length === 0" class="no-results">
   No entries found for selected date and tag.
 </p>
 
-<!-- TIL entries -->
+
 <ul class="til-list">
   <li *ngFor="let til of filteredTils()" class="til-entry">
     <h3>{{ til.title }}</h3>

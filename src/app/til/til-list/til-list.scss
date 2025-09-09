@@ -1,4 +1,4 @@
-/* List container */
+
 .til-list {
   list-style: none;
   padding: 0;
@@ -7,7 +7,6 @@
   gap: 1.5rem;
 }
 
-/* Each TIL entry styled like a card */
 .til-entry {
   background-color: rgba(255, 255, 255, 0.08);
   padding: 1.5rem;
@@ -21,14 +20,14 @@
   transform: translateY(-2px);
 }
 
-/* Title */
+
 .til-entry h3 {
   margin: 0 0 0.5rem 0;
   font-size: 1.25rem;
   font-weight: 600;
 }
 
-/* Tags and date */
+
 .tags {
   font-size: 0.9rem;
   color: #d1d1d1;
